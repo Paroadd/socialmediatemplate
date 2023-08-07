@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SocialMedia Template</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light gray background similar to social media feeds */
+    color: #333; /* Darker text color for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure content stretches to fill the viewport */
+    position: relative; /* Needed for footer positioning */
+  }
+
+  .feed-container {
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for better readability */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff; /* White background for feed */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1; /* Allow the feed container to expand and fill available space */
+    margin-bottom: 20px; /* Add some space between the feed and the footer */
+  }
+
+  .feed-item {
+    border-bottom: 1px solid #ddd; /* Separation between feed items */
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .feed-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #1da1f2; /* Twitter blue color */
+  }
+
+  .feed-text {
+    font-size: 18px;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute; /* Lock the footer to the bottom */
+    bottom: 0; /* Position at the bottom */
+  }
+</style>
+</head>
+<body>
+  <div class="feed-container">
+    <div class="feed-item">
+      <span class="feed-icon">🐦</span>
+      <span class="feed-text">Just posted a new update on Twitter! Check it out!</span>
+    </div>
+    <div class="feed-item">
+      <span class="feed-icon">📷</span>
+      <span class="feed-text">Shared some amazing photos on Instagram. Swipe to see them all!</span>
+    </div>
+    <!-- Add more feed items here -->
+  </div>
+  <footer class="footer">
+    &copy; 2023 Paroad
+  </footer>
+</body>
+</html>
